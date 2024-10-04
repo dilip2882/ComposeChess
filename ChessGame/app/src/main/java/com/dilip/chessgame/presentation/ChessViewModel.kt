@@ -2,9 +2,9 @@ package com.dilip.chessgame.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.dilip.chessgame.data.GameState
 import com.dilip.chessgame.data.MovePiece
 import com.dilip.chessgame.data.RealtimeMessagingClient
+import com.dilip.models.GameState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asStateFlow

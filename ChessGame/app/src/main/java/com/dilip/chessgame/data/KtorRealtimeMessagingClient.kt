@@ -1,5 +1,6 @@
 package com.dilip.chessgame.data
 
+import com.dilip.models.GameState
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.websocket.webSocketSession
 import io.ktor.client.request.url

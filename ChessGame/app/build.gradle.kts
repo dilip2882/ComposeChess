@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     kotlin("kapt")
     alias(libs.plugins.dagger.hilt)
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.20"
+//    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.20"
 }
 
 android {
@@ -85,4 +85,7 @@ dependencies {
     implementation(libs.ktor.client.logging)
 
     implementation(libs.kotlinx.serialization.json)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")
+
+
 }

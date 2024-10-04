@@ -1,4 +1,4 @@
-package com.dilip.models
+package com.dilip.chessgame.data
 
 import kotlinx.serialization.Serializable
 

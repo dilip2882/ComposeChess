@@ -1,5 +1,6 @@
 package com.dilip
 
+import com.dilip.models.ChessGame
 import com.dilip.plugins.*
 import io.ktor.server.application.*
 
@@ -8,9 +9,10 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
+    val game = ChessGame()
     configureSerialization()
     configureSecurity()
     configureSockets()
     configureMonitoring()
-    configureRouting()
+    configureRouting(game)
 }

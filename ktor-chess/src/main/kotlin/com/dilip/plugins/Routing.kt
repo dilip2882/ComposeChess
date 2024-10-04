@@ -1,13 +1,13 @@
 package com.dilip.plugins
 
+import com.dilip.models.ChessGame
+import com.dilip.socket
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
-fun Application.configureRouting() {
+fun Application.configureRouting(game: ChessGame) {
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
+        socket(game)
     }
 }

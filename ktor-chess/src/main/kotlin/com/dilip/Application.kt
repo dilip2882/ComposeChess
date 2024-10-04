@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 fun Application.module() {
     val game = ChessGame()
     configureSerialization()
-    configureSecurity()
+//    configureSecurity()
     configureSockets()
     configureMonitoring()
     configureRouting(game)

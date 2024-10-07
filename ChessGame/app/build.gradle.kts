@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    kotlin("kapt")
-    alias(libs.plugins.dagger.hilt)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 //    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.20"
 }
 
@@ -83,9 +83,13 @@ dependencies {
     implementation(libs.ktor.client.cio)
     implementation(libs.ktor.client.websockets)
     implementation(libs.ktor.client.logging)
+    implementation("io.ktor:ktor-client-okhttp:2.3.11")
 
     implementation(libs.kotlinx.serialization.json)
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")
+//    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.7.3")
 
+}
 
+kapt {
+    correctErrorTypes = true
 }

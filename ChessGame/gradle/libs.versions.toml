@@ -6,10 +6,11 @@ junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 kotlinxSerializationJson = "1.7.3"
-ktorClientCio = "1.6.3"
-ktorClientCore = "2.3.11"
-ktorClientLogging = "2.3.11"
-ktorClientWebsockets = "1.6.3"
+ktorClientCio = "2.3.12"
+ktorClientCore = "2.3.12"
+ktorClientLogging = "2.3.12"
+ktorClientWebsockets = "2.3.12"
+ktorClientFeatures = "2.0.0"
 lifecycleRuntimeKtx = "2.8.6"
 activityCompose = "1.9.2"
 composeBom = "2024.09.03"
@@ -39,6 +40,7 @@ dagger-hilt-compose  = {module = "androidx.hilt:hilt-navigation-compose", versio
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorClientCio" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientCore" }
+ktor-client-features = { module = "io.ktor:ktor-client-features", version.ref = "ktorClientFeatures" }
 ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientLogging" }
 ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktorClientWebsockets" }
 
